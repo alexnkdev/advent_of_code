@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-class Solution {
+class Day10 {
 
   public static void main(String[] args) {
     String line = "1113122113";
