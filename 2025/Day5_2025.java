@@ -46,7 +46,6 @@ class Day5_2025 {
     int level = 0;
     long currentStart = 0;
     for (Event event : events) {
-      System.out.println(event.val + "  "+  event.eventType);
       if (event.eventType == START) {
         level++;
         if (level == 1) {
@@ -55,12 +54,10 @@ class Day5_2025 {
       } else if (event.eventType == END) {
         level--;
         if (level == 0) {
-          System.out.println(event.val + " " + currentStart);
           ret += (event.val - currentStart + 1);
         }
       }
     }
-    System.out.println("Levle : " + level);
     System.out.println(ret);
     sc.close();
   }
