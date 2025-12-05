@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-class Day4 {
+class Day4_2025 {
 
   public static void main(String[] args) throws Exception {
     Scanner sc = new Scanner(new File("input.txt"));

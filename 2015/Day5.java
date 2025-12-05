@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-class Solution {
+class Day5 {
   public static void main(String[] args) throws IOException {
     Scanner sc = new Scanner(new File("input.txt"));
     int ret = 0;

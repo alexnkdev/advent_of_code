@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-class Day3 {
+class Day3_2025 {
 
   static Long[][] memo;
 

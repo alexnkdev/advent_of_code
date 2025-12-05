@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-class Day1 {
+class Day1_2025 {
   public static void main(String[] args) throws Exception {
     Scanner sc = new Scanner(new File("input.txt"));
     int current = 50;
