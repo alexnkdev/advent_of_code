@@ -35,7 +35,26 @@ object Main {
   }
 
   def solvePart2(): Unit = {
-    println("Part 2");
+    val source = Source.fromFile("Day4_input.txt");
+    val ret = source.getLines()
+      .flatMap {
+        line =>
+          val tokens = line.split("-");
+          val idToken = tokens.last;
+          val id = idToken.split("\\[")(0).toInt
+          val encrypted = tokens.dropRight(1).mkString(" ")
+
+          val decrypted = encrypted.map {
+            case ' ' => ' '
+            case ch => ('a' + (ch - 'a' + id) % 26).toChar
+          }
+
+          if (decrypted.contains("northpole")) Some(id) else None
+
+      }.find {
+        _ => true
+      }
+    println(ret);
   }
 
 }
