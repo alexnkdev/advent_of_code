@@ -50,6 +50,11 @@ object Day8 extends App {
 
     println(s"Part1: ${ret}")
 
+    println("Part2:")
+    map.foreach(row => 
+      println(row.mkString)
+    )
+
     source.close()
 
 }
