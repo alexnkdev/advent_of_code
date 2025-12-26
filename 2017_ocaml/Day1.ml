@@ -2,7 +2,7 @@ let read_lines file =
   let contents = In_channel.with_open_bin file In_channel.input_all in
   String.split_on_char '\n' contents
 
-let () = 
+let solvePart1 () = 
   let lines = read_lines "Day1_input.txt" in
   List.iter (fun line ->
     let n = String.length line in
@@ -12,6 +12,22 @@ let () =
       if c = next then
         sum := !sum + (Char.code c - Char.code '0')
     ) line;
-    Printf.printf "sum=%d" !sum
+    Printf.printf "Part1=%d\n" !sum
   ) lines
 
+let solvePart2 () = 
+  let lines = read_lines "Day1_input.txt" in
+  List.iter (fun line ->
+    let n = String.length line in
+    let sum = ref 0 in
+    String.iteri (fun i c ->
+      let next = line.[(i + n / 2) mod n] in
+      if c = next then
+        sum := !sum + (Char.code c - Char.code '0')
+    ) line;
+    Printf.printf "Part2=%d\n" !sum
+  ) lines
+
+let () = 
+  solvePart1 ();
+  solvePart2 ()
