@@ -44,3 +44,14 @@ let () =
     let lst = range 2 5 in
     List.iter (Printf.printf "%d ") lst;
     print_newline ()
+
+
+let () =
+  let square x = x * x in 
+  let rec map f u =
+    match u with
+    | [] -> []
+    | x :: u -> f x :: map f u
+  in
+    let squared = map square [1; 2; 3; 4;] in
+    List.iter (Printf.printf "%d ") squared
