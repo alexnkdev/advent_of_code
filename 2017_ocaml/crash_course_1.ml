@@ -73,3 +73,12 @@ let () =
       else if x = "qux" then 4
       else 0 in
     Printf.printf "Val=%d\n" (g "qux")
+
+let () =
+  let g' x = match x with
+    | "foo" -> 1
+    | "bar" -> 2
+    | "baz" -> 2
+    | "qux" -> 4
+    | _ -> 0;;
+
