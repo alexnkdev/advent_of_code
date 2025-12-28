@@ -80,5 +80,34 @@ let () =
     | "bar" -> 2
     | "baz" -> 2
     | "qux" -> 4
-    | _ -> 0;;
+    | _ -> 0 in
+  Printf.printf "test\n"
 
+type primary_colour = Red | Green | Blue
+
+let () =
+  let colour_to_rgb colour =
+    match colour with
+    | Red -> (0xff, 0, 0)
+    | Green -> (0, 0xff, 0)
+    | Blue -> (0, 0, 0xff)
+  in
+    Printf.printf "Test\n"
+
+type person = {
+  first_name : string;
+  surname : string;
+  age : int
+}
+
+let () =
+  let gerard = {
+    first_name = "Gerard";
+    surname = "Huest";
+    age = 76
+  } in
+    Printf.printf "Ok\n"
+
+let () =
+  let r = ref 0 in
+  Printf.printf "Mutable r=%d\n" !r
