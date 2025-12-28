@@ -23,3 +23,6 @@ let () =
 let () =
   Printf.printf "%d" (50 + 50);
   Printf.printf "%d" 125;
+  let x = 2 * if "hello" = "world" then 3 else 5 in
+    Printf.printf "x=%d\n" x
+
