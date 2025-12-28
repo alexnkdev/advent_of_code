@@ -33,3 +33,14 @@ let () =
   let a = 1 in
   let b = 2 in
     Printf.printf "a+b=%d\n" (a + b)
+
+let () =
+  let rec range lo hi =
+    if lo > hi then
+      []
+    else
+      lo :: range (lo + 1) hi
+  in 
+    let lst = range 2 5 in
+    List.iter (Printf.printf "%d ") lst;
+    print_newline ()
