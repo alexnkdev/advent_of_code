@@ -24,5 +24,12 @@ let () =
   Printf.printf "%d" (50 + 50);
   Printf.printf "%d" 125;
   let x = 2 * if "hello" = "world" then 3 else 5 in
-    Printf.printf "x=%d\n" x
+  Printf.printf "x=%d\n" x;
+  (** Feets in a mile *)
+  let feets = 5280 in
+  Printf.printf "Feets in a mile %d\n" feets
 
+let () =
+  let a = 1 in
+  let b = 2 in
+    Printf.printf "a+b=%d\n" (a + b)
