@@ -11,7 +11,7 @@ let () =
   Printf.printf "%d\n" !y
 
 (* Comment *)
-let u = [1; 2; 3; 4];;
+let u = [1; 2; 3; 4]
 
 let print_int_list lst = 
   List.iter (fun x -> Printf.printf "%d " x) lst;
@@ -19,3 +19,7 @@ let print_int_list lst =
 
 let () = 
   print_int_list u
+
+let () =
+  Printf.printf "%d" (50 + 50);
+  Printf.printf "%d" 125;
