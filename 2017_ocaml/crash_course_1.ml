@@ -55,3 +55,21 @@ let () =
   in
     let squared = map square [1; 2; 3; 4;] in
     List.iter (Printf.printf "%d ") squared
+
+let () =
+  let f opt = match opt with
+  | None -> None
+  | Some None -> None
+  | Some (Some x) -> Some x
+  in
+    Printf.printf "test\n"
+
+
+let () =
+    let g x =
+      if x = "foo" then 1
+      else if x = "bar" then 2
+      else if x = "baz" then 3
+      else if x = "qux" then 4
+      else 0 in
+    Printf.printf "Val=%d\n" (g "qux")
