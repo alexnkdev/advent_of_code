@@ -1,1 +1,2 @@
-let v = "Hello, world 22343!"
+let hello = "Hello"
+let v = hello ^ ", world!"
