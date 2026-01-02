@@ -108,6 +108,12 @@ let () =
   } in
     Printf.printf "Ok\n"
 
+
 let () =
   let r = ref 0 in
   Printf.printf "Mutable r=%d\n" !r
+
+let () = 
+  let text = ref "hello " in
+  print_string !text
+
