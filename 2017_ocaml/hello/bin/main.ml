@@ -1,1 +1,2 @@
-let () = Printf.printf "%s 11\n" Hello.En.v
+let () = Printf.printf "%s\n" Hello.Es.v
+let () = Printf.printf "%s\n" Hello.En.v
